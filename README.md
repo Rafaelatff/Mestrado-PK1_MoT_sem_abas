@@ -18,7 +18,9 @@ Global variables use 317 bytes (15%) of dynamic memory, leaving 1731 bytes for l
 
 
 
-**Python 3.10.7**
+**Python 3.9.12**
+
+I first tried to instal the Python 3.10.7, but then Andrei recommended to use the Python 3.9.12.
 
 To open the py files, I go -> Right click on the .py file -> Edit with IDLE -> Edit with IDLE 3.10 (64-bit)
 
@@ -26,12 +28,16 @@ To RUN the file, just go -> Run -> Run Module F5.
 
 --after running the 1_Python_MoT_Requisição file, the output was: **ModuleNotFoundError: No module named 'serial'**.
 
+The error prevals.
+
+![image](https://user-images.githubusercontent.com/58916022/191148235-da73e4aa-a3f3-4da1-9572-85cfff02bc6f.png)
+
 
 Note1: During orientation, I saw that Branquinho was using Python 3.9.2.
 
 Note2: Serial is not included with Python. It is a package that you'll need to install separately.
 
-
+**I was having path errors!!**
 
 To create e virtual environment, open the CMG and:
 
@@ -55,7 +61,17 @@ pip install serial // to install serial package
 
 --after running the 1_Python_MoT_Requisição file again, the output was: **ModuleNotFoundError: No module named 'serial'**.
 
+Then again, **I was having path errors!!**
 
+![image](https://user-images.githubusercontent.com/58916022/191149020-9c08ee4a-e4ac-4e12-a0b1-83e08667ef84.png)
+
+Now I checked in CMD:
+
+![image](https://user-images.githubusercontent.com/58916022/191149160-54d6fcca-c256-473d-ba42-e67d60e60e9b.png)
+
+and then:
+
+![image](https://user-images.githubusercontent.com/58916022/191149284-de3c0dea-8a72-46d3-9e84-2ae03696f7ee.png)
 
 
 # Theorical Info
