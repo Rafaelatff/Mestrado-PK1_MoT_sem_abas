@@ -11,12 +11,18 @@ PK1_MoT_sem_abas code from Branquinho
 
 **Arduino IDE 2.0.0**
 
-Tools -> Board -> Arduino AVR Boards -> Arduino Pro or Pro Mini.
+- First, [download Arduino IDE]().
+
+- Tools -> Board -> Arduino AVR Boards -> Arduino Pro or Pro Mini, or:
+
+![image](https://user-images.githubusercontent.com/58916022/197593796-684a6179-8fcf-471d-bc77-a47984094802.png)
+
+![image](https://user-images.githubusercontent.com/58916022/197593907-ab1f0394-18a3-4756-b290-e9ff4ec15b4f.png)
+
+- Now, code is ready to be uploaded in the Atmel mega328P.
 
 Use: Sketch uses 4268 bytes (13%) of program storage space. Maximum is 30720 bytes.
 Global variables use 317 bytes (15%) of dynamic memory, leaving 1731 bytes for local variables. Maximum is 2048 bytes.
-
-
 
 **Python 3.10.8**
 
@@ -33,9 +39,6 @@ Global variables use 317 bytes (15%) of dynamic memory, leaving 1731 bytes for l
 ![image](https://user-images.githubusercontent.com/58916022/197544181-f09da409-831f-461a-aa24-f870c8800876.png)
 
 - Now python files are ready to use. 
-
-
-
 
 # Theorical Info
 
