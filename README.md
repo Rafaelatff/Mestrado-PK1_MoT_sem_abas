@@ -11,7 +11,7 @@ PK1_MoT_sem_abas code from Branquinho
 
 **Arduino IDE 2.0.0**
 
-- First, [download Arduino IDE]().
+- First, [download Arduino IDE](https://www.arduino.cc/en/software).
 
 - Tools -> Board -> Arduino AVR Boards -> Arduino Pro or Pro Mini, or:
 
