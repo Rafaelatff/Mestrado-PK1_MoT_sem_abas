@@ -3,6 +3,7 @@ PK1_MoT_sem_abas code from Branquinho
 
 # Hardwire provided by Branquinho
 
+- PK1 v2
 - Seeeduino v3.0 with Atmel mega328P
 - Base Shield v2.1
 - LM35 
@@ -11,73 +12,35 @@ PK1_MoT_sem_abas code from Branquinho
 
 **Arduino IDE 2.0.0**
 
-Tools -> Board -> Arduino AVR Boards -> Arduino Pro or Pro Mini.
+- First, [download Arduino IDE](https://www.arduino.cc/en/software).
+- Tools -> Board -> Arduino AVR Boards -> Arduino Pro or Pro Mini, or:
+
+![image](https://user-images.githubusercontent.com/58916022/197593796-684a6179-8fcf-471d-bc77-a47984094802.png)
+
+![image](https://user-images.githubusercontent.com/58916022/197593907-ab1f0394-18a3-4756-b290-e9ff4ec15b4f.png)
+- Now, code is ready to be uploaded in the Atmel mega328P.
 
 Use: Sketch uses 4268 bytes (13%) of program storage space. Maximum is 30720 bytes.
 Global variables use 317 bytes (15%) of dynamic memory, leaving 1731 bytes for local variables. Maximum is 2048 bytes.
 
+**Python 3.10.8**
 
+- First, [download Python](https://www.python.org/downloads/).
+- After the download is complete, run the executable file.
+- Tick the 'Add python.exe to PATH' option.
 
-**Python 3.9.12**
+![image](https://user-images.githubusercontent.com/58916022/197539837-e9d6f3f0-b8a6-429f-a70c-5bddd66df9bc.png)
+- After the installation proccess is complete, open the Command Prompt and run a 'pip install serial'. The serial is used by '1_Python_MoT_Requisição.py'.
 
-I first tried to instal the Python 3.10.7, but then Andrei recommended to use the Python 3.9.12.
-
-To open the py files, I go -> Right click on the .py file -> Edit with IDLE -> Edit with IDLE 3.10 (64-bit)
-
-To RUN the file, just go -> Run -> Run Module F5.
-
---after running the 1_Python_MoT_Requisição file, the output was: **ModuleNotFoundError: No module named 'serial'**.
-
-The error prevals.
-
-![image](https://user-images.githubusercontent.com/58916022/191148235-da73e4aa-a3f3-4da1-9572-85cfff02bc6f.png)
-
-
-Note1: During orientation, I saw that Branquinho was using Python 3.9.2.
-
-Note2: Serial is not included with Python. It is a package that you'll need to install separately.
-
-**I was having path errors!!**
-
-To create e virtual environment, open the CMG and:
-
-python -m venv my-venv1 // creates a virtual environment with the name my-venv1
-
-my-venv1\Scripts\Activate // to activate the virtual environment
-
-pip install serial // to install the serial package into the virtual enviroment
-
-pip list // to list packages installed into the virtual environment
-
-![image](https://user-images.githubusercontent.com/58916022/190928519-afb5a2ff-6f4e-4992-b569-beaed277a8ca.png)
-
-deactivate // to leave virtual environment
-
-Or install the packages globaly.
-
-pip install serial // to install serial package
-
-![image](https://user-images.githubusercontent.com/58916022/190928823-fef71dde-df34-4a25-be30-9c259ea43510.png)
-
---after running the 1_Python_MoT_Requisição file again, the output was: **ModuleNotFoundError: No module named 'serial'**.
-
-Then again, **I was having path errors!!**
-
-![image](https://user-images.githubusercontent.com/58916022/191149020-9c08ee4a-e4ac-4e12-a0b1-83e08667ef84.png)
-
-Now I checked in CMD:
-
-![image](https://user-images.githubusercontent.com/58916022/191149160-54d6fcca-c256-473d-ba42-e67d60e60e9b.png)
-
-and then:
-
-![image](https://user-images.githubusercontent.com/58916022/191149284-de3c0dea-8a72-46d3-9e84-2ae03696f7ee.png)
-
+![image](https://user-images.githubusercontent.com/58916022/197544181-f09da409-831f-461a-aa24-f870c8800876.png)
+- Do the same for 'pip install matplotlib', since it is used in '2_Python_D_G_MoT_Comandos.py'.
+- Do the same for 'pip install schedule', since it is used in '3D_Python_MoT_Exibição_Lum.py'.
+- Do the same for 'pip install pyserial', since it is used in '3D_Python_MoT_Exibição_Lum.py'.
+- Do the same for 'pip install pandas', since it is used in '3D_Python_MoT_Exibição_Lum.py'.
+- Now python files are ready to use. 
 
 # Theorical Info
 
 -Packages with 52 bytes.
-
 -'Pacote de descida'(computer to arduino).
-
 -'Pacote de subida'(arduino to computer).
